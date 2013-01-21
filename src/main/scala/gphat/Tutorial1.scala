@@ -32,12 +32,13 @@ object Hi {
    * named. upper(anArg = "Cory") or upper("Cory").
    */
 
-   /*
-    * Inference is great. Scala can infer the type of a val or var. Note
-    * This function has no return type, and the string in it isn't typed.
-    * Scala can figure it out for us!
-    */
-    def something() = {
-      val foo = "bar"
-    }
+  /*
+   * Inference is great. Scala can infer the type of a val or var. Note
+   * This function has no return type, and the string in it isn't typed.
+   * Scala can figure it out for us!
+   */
+   def something() = {
+     val foo = "bar"
+     foo
+   }
 }
