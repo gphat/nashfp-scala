@@ -25,6 +25,9 @@ class Person2(name: String, age: Int) {
   def sayHi = println("Hello, " + name + "!")
 }
 
+// val p = new Person2("Cory", 32)
+// p.sayHi // prints "Hello, Cory!"
+
 /**
  * Since there is no concept of static, you need to use an object for things
  * like factory methods or constants; traditional static uses.  You can
@@ -33,5 +36,5 @@ class Person2(name: String, age: Int) {
  */
 object Person2 {
 
-  def defaultName = "Baby"
+  def DefaultName = "Baby"
 }

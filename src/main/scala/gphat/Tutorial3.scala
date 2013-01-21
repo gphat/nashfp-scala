@@ -1,3 +1,5 @@
+package gphat
+
 /* Case classes can be seen as plain and immutable data-holding objects that
  * should exclusively depend on their constructor arguments.
  * Case classes get toString, equals and hashCode automatically.
@@ -9,7 +11,7 @@ case class Person3(name: String, age: Int) {
   def sayHi = println("Hello, " + name + "!")
 }
 
-object Hi3 {
+object Tutorial3 {
 
   def main(args: Array[String]) = {
     // Create an instance of the case class. Notice the lack of new.

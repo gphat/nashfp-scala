@@ -1,4 +1,6 @@
-object Hi4 {
+package gphat
+
+object Tutorial4 {
   /* An anonymous function, stored in a val.
    *
    *         (params)       => function body

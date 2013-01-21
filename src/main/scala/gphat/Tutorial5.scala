@@ -1,3 +1,5 @@
+package gphat
+
 class Vehicle(wheels: Int) {
 
   def rev = println("Vroom")
@@ -23,13 +25,26 @@ trait Towable {
  */
 class Car extends Vehicle(4) with Towable {
 
+  // Want variable wheels for a Car?
+  // class Car(wheels: Int) extends Vehicle(wheels) with Towable {
+
   /* Override! */
   override def start() {
     println("Running like a car!")
   }
 }
 
-object Whatever {
-  val car = new Car()
-  car.rev
+object Tutorial5 {
+
+  def main(args: Array[String]): Unit = {
+    val car = new Car()
+    car.rev
+
+    car match {
+      case c: Towable => println("We can tow it!")
+      case _ => println("Can't town it :(")
+    }
+    // traits also work at runtime
+    // var c = new Car() with Towable
+  }
 }

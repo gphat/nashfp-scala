@@ -6,7 +6,7 @@ package gphat
  * Object? Yup. An object is a singleton.  It's effectively a bag of static
  * methods, in Java-speak.
  */
-object Hi {
+object Tutorial1 {
 
   /**
    * A main method to serve as the entry point of a program, just like
